@@ -10,7 +10,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 // Our project has two screens: HomeScreen and GameScreen
 // Thus, we import both of these screens
 import HomeScreen from "./screens/HomeScreen";
-import GameScreen from "./screens/GameScreenStarter";
+import GameScreen from "./screens/GameScreen";
 
 // To initialize and style our Navigation Stack, we call the default methods
 // https://reactnavigation.org/docs/hello-react-navigation
