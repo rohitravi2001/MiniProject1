@@ -23,11 +23,18 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        {/* Our Navigation Stack has two screens: 
+              1) "Match the Members" - our HomeScreen, and...
+              2) "Play" - our GameScreen 
+            Notice how we can define exactly which components are used for
+            each screen using the "component" parameter. */}
         <Stack.Screen
+          options={StackOptions}
           name="Match the Members"
           component={HomeScreen}
         />
         <Stack.Screen
+          options={StackOptions}
           name="Play"
           component={GameScreen}
         />

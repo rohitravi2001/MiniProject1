@@ -1,3 +1,5 @@
+import { Image } from "react-native";
+
 // If you have any logic that can be abstracted into helper functions,
 // it's best to put them into Utility Classes, like the one we have here.
 
