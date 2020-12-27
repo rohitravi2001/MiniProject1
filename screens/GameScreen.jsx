@@ -109,12 +109,12 @@ export default function GameScreen() {
       <Text style={styles.timerText}>
         Time Remaining: {(timeLeft / 1000).toFixed(2)}
       </Text>
-      {correctImage ? (
-        <Image
-          source={/* TODO: Insert something from state here. */}
+      {<Image
+          /* TODO: Replace this with something from state. */
+          source={"https://via.placeholder.com/300.png/09f/fff"}
           style={styles.image}
         />
-      ) : null}
+      }
       {nameButtons}
     </View>
   );
