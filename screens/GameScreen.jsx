@@ -18,9 +18,7 @@ const names = Object.keys(nameToPic);
 export default function GameScreen() {
   /******************** STATE **********************/
 
-  // TODO: Declare and initialize state variables as appropriate.
-
-  // The timer state is handled for you.
+  // TODO: Declare and initialize state variables here. The timer is handled for you.
   const [timeLeft, setTimeLeft] = useState(5000);
 
   /******************** LOGIC **********************/
@@ -31,11 +29,10 @@ export default function GameScreen() {
       setTimeLeft(timeLeft - 10);
     } else {
       // Time expired.
-      // TODO: Update some state variable!
+      // TODO: Update state here.
     }
   };
 
-  // This method might be helpful to use somewhere.
   const getNextRound = () => {
     // Fetches the next member name to guess.
     let correct = names[Math.floor(Math.random() * names.length)];
@@ -53,14 +50,13 @@ export default function GameScreen() {
     }
     nameOptions = shuffle(nameOptions);
 
-    // TODO: Update appropriate state variables here.
+    // TODO: Update state here.
 
     setTimeLeft(5000);
   };
 
-  // This method might be useful somewhere.
   const selectedNameChoice = (index) => {
-    // TODO: Validate selection & update state accordingly.
+    // TODO: Validate selection & update state here.
   };
 
   /******************** EFFECTS **********************/
@@ -78,7 +74,7 @@ export default function GameScreen() {
   useEffect(
     () => {
       getNextRound();
-    }, [ /* Your State Variable Goes Here */ ]
+    }, [ /* TODO: Your State Variable Goes Here */ ]
   );
 
   /******************** VIEW **********************/
@@ -94,7 +90,7 @@ export default function GameScreen() {
         onPress={() => selectedNameChoice(j)}
       >
         <Text style={styles.buttonText}>
-          {/* TODO: Insert something from state here. */}
+          {/* TODO: Use something from state here. */}
         </Text>
       </TouchableOpacity>
     );
@@ -104,13 +100,13 @@ export default function GameScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.scoreText}>
-        Current Score: {/* TODO: Insert something from state here. */}
+        Current Score: {/* TODO: Use something from state here. */}
       </Text>
       <Text style={styles.timerText}>
         Time Remaining: {(timeLeft / 1000).toFixed(2)}
       </Text>
       {<Image
-          /* TODO: Replace this with something from state. */
+          /* TODO: Use something from state here. */
           source={"https://via.placeholder.com/300.png/09f/fff"}
           style={styles.image}
         />
