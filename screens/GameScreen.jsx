@@ -8,31 +8,25 @@ import { shuffle } from "../utils/ArrayUtils";
 const names = Object.keys(nameToPic);
 
 /* Here, we have a React functional component. 
-    This function returns the JSX that defines the GameScreen.
-    Our code is organized as follows:
-      - State Hooks
-      - Logic Methods
-      - Effect Hooks
-      - View Setup
-*/
+    This function returns the JSX that defines the GameScreen. */
 export default function GameScreen() {
-  /******************** STATE **********************/
+  // TODO: Declare and initialize state variables here, using "useState".
 
-  // TODO: Declare and initialize state variables here. The timer is handled for you.
+  // The timer is handled for you.
   const [timeLeft, setTimeLeft] = useState(5000);
 
-  /******************** LOGIC **********************/
-
-  // This is called by the timer every 10 milliseconds.
+  // This method is called by the timer every 10 seconds.
   const countDown = () => {
     if (timeLeft > 0) {
+      // Time is still left, so decrement time state variable.
       setTimeLeft(timeLeft - 10);
     } else {
-      // Time expired.
-      // TODO: Update state here.
+      // TODO: Time has expired. Update state here.
     }
   };
 
+  // This is used in the useEffect(...) hook bound on a specific STATE variable.
+  // It updates state to present a new member & name options.
   const getNextRound = () => {
     // Fetches the next member name to guess.
     let correct = names[Math.floor(Math.random() * names.length)];
@@ -55,11 +49,9 @@ export default function GameScreen() {
     setTimeLeft(5000);
   };
 
-  const selectedNameChoice = (index) => {
-    // TODO: Validate selection & update state here.
-  };
-
-  /******************** EFFECTS **********************/
+  // Called when user taps a name option.
+  // TODO: Update correct # and total # state values.
+  const selectedNameChoice = (index) => {};
 
   // Call the countDown() method every 10 milliseconds.
   useEffect(() => {
@@ -74,16 +66,18 @@ export default function GameScreen() {
   useEffect(
     () => {
       getNextRound();
-    }, [ /* TODO: Your State Variable Goes Here */ ]
+    },
+    [
+      /* TODO: Your State Variable Goes Here */
+    ]
   );
-
-  /******************** VIEW **********************/
 
   // Set up four name buttons, with the appropriate names and onPress handlers.
   const nameButtons = [];
   for (var i = 0; i < 4; i++) {
     const j = i;
     nameButtons.push(
+      // A button is just a Text component wrapped in a TouchableOpacity component.
       <TouchableOpacity
         key={i}
         style={styles.button}
@@ -105,7 +99,8 @@ export default function GameScreen() {
       <Text style={styles.timerText}>
         Time Remaining: {(timeLeft / 1000).toFixed(2)}
       </Text>
-      {<Image
+      {
+        <Image
           /* TODO: Use something from state here. */
           source={"https://via.placeholder.com/300.png/09f/fff"}
           style={styles.image}
