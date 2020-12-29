@@ -11,11 +11,21 @@ import { createStackNavigator } from "@react-navigation/stack";
 // Thus, we import both of these screens
 import HomeScreen from "./screens/HomeScreen";
 import GameScreen from "./screens/GameScreen";
+import { nameToPic } from "./constants/Constants";
+import {Asset} from "expo-asset";
 
 // To initialize and style our Navigation Stack, we call the default methods
 // https://reactnavigation.org/docs/hello-react-navigation
 const Stack = createStackNavigator();
 const StackOptions = { headerTitleStyle: { fontFamily: "Avenir" } };
+
+// Loading all images for quick use (eliminates lag problem)
+// See https://docs.expo.io/versions/latest/sdk/asset/
+Asset.loadAsync(require("../assets/mdb_logo.png"));
+for(var n in nameToPic) {
+  console.log("Prefetched image for: " + nameToPic[n][0]);
+  Asset.loadAsync(nameToPic[n][1]);
+}
 
 // This is the default entry point of our application
 // This function returns JSX: a tree-like structure of React components
