@@ -95,7 +95,7 @@ export default function GameScreen() {
     <View style={styles.container}>
       {/* TODO: Build out your UI using Text and Image components
           Hint: What does the nameButtons list above hold? What types of objects is this list storing? 
-                Really get a sense of whats going on in the for loop above this return statement. */}
+                Try to get a sense of what's going on in the for loop above this return statement. */}
     </View>
   );
 }
