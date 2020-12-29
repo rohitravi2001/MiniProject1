@@ -61,7 +61,7 @@ const nameToPic = {
 	 paulshao: ["Paul Shao", require("../assets/MemberPictures/paulshao.jpg")], 
 	 radhikadhomse: ["Radhika Dhomse", require("../assets/MemberPictures/radhikadhomse.jpg")], 
 	 saiyandapalli: ["Sai Yandapalli", require("../assets/MemberPictures/saiyandapalli.jpg")], 
-	 salmanhusain: ["Salman Husain", require("../assets/MemberPictures/salmanhusain.jpg")], 
+	 allisonhusain: ["Allison Husain", require("../assets/MemberPictures/allisonhusain.jpg")], 
 	 samanthalee: ["Samantha Lee", require("../assets/MemberPictures/samanthalee.jpg")], 
 	 shainachen: ["Shaina Chen", require("../assets/MemberPictures/shainachen.jpg")], 
 	 shariewang: ["Sharie Wang", require("../assets/MemberPictures/shariewang.jpg")], 
