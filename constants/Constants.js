@@ -1,8 +1,6 @@
 const nameToPic = { 
 	 aadypillai: ["Aady Pillai", require("../assets/MemberPictures/aadypillai.jpg")], 
 	 aarushiagrawal: ["Aarushi Agrawal", require("../assets/MemberPictures/aarushiagrawal.jpg")], 
-	 aayushtyagi: ["Aayush Tyagi", require("../assets/MemberPictures/aayushtyagi.jpg")], 
-	 abhinavkejriwal: ["Abhinav Kejriwal", require("../assets/MemberPictures/abhinavkejriwal.jpg")], 
 	 afeestiamiyu: ["Afees Tiamiyu", require("../assets/MemberPictures/afeestiamiyu.jpg")], 
 	 ajaymerchia: ["Ajay Merchia", require("../assets/MemberPictures/ajaymerchia.jpg")], 
 	 anandchandra: ["Anand Chandra", require("../assets/MemberPictures/anandchandra.jpg")], 
