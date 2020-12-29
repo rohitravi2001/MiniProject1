@@ -21,9 +21,8 @@ const StackOptions = { headerTitleStyle: { fontFamily: "Avenir" } };
 
 // Loading all images for quick use (eliminates lag problem)
 // https://docs.expo.io/versions/latest/sdk/asset/
-Asset.loadAsync(require("../assets/mdb_logo.png"));
+Asset.loadAsync(require("./assets/mdb_logo.png"));
 for (var n in nameToPic) {
-  console.log("Prefetched image for: " + nameToPic[n][0]);
   Asset.loadAsync(nameToPic[n][1]);
 }
 
