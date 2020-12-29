@@ -1,8 +1,6 @@
 const nameToPic = { 
 	 aadypillai: ["Aady Pillai", require("../assets/MemberPictures/aadypillai.jpg")], 
 	 aarushiagrawal: ["Aarushi Agrawal", require("../assets/MemberPictures/aarushiagrawal.jpg")], 
-	 aayushtyagi: ["Aayush Tyagi", require("../assets/MemberPictures/aayushtyagi.jpg")], 
-	 abhinavkejriwal: ["Abhinav Kejriwal", require("../assets/MemberPictures/abhinavkejriwal.jpg")], 
 	 afeestiamiyu: ["Afees Tiamiyu", require("../assets/MemberPictures/afeestiamiyu.jpg")], 
 	 ajaymerchia: ["Ajay Merchia", require("../assets/MemberPictures/ajaymerchia.jpg")], 
 	 anandchandra: ["Anand Chandra", require("../assets/MemberPictures/anandchandra.jpg")], 
@@ -61,7 +59,7 @@ const nameToPic = {
 	 paulshao: ["Paul Shao", require("../assets/MemberPictures/paulshao.jpg")], 
 	 radhikadhomse: ["Radhika Dhomse", require("../assets/MemberPictures/radhikadhomse.jpg")], 
 	 saiyandapalli: ["Sai Yandapalli", require("../assets/MemberPictures/saiyandapalli.jpg")], 
-	 salmanhusain: ["Salman Husain", require("../assets/MemberPictures/salmanhusain.jpg")], 
+	 allisonhusain: ["Allison Husain", require("../assets/MemberPictures/allisonhusain.jpg")], 
 	 samanthalee: ["Samantha Lee", require("../assets/MemberPictures/samanthalee.jpg")], 
 	 shainachen: ["Shaina Chen", require("../assets/MemberPictures/shainachen.jpg")], 
 	 shariewang: ["Sharie Wang", require("../assets/MemberPictures/shariewang.jpg")], 
