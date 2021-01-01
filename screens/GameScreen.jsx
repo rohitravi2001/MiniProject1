@@ -90,23 +90,15 @@ export default function GameScreen() {
     );
   }
 
+  const timeRemainingStr = (timeLeft / 1000).toFixed(2);
+
   // Style & return the view.
   return (
-    <View style={styles.container}>
-      <Text style={styles.scoreText}>
-        Current Score: {/* TODO: Use something from state here. */}
-      </Text>
-      <Text style={styles.timerText}>
-        Time Remaining: {(timeLeft / 1000).toFixed(2)}
-      </Text>
-      {
-        <Image
-          /* TODO: Use something from state here. */
-          source={"https://via.placeholder.com/300.png/09f/fff"}
-          style={styles.image}
-        />
-      }
-      {nameButtons}
+    <View>
+      {/* TODO: Build out your UI using Text and Image components. */}
+      {/* Hint: What does the nameButtons list above hold? 
+          What types of objects is this list storing?
+          Try to get a sense of what's going on in the for loop above. */}
     </View>
   );
 }
