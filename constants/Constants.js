@@ -49,5 +49,12 @@ const nameToPic = {
 	 willoakley: ["Will Oakley", require("../assets/MemberPictures/willoakley.jpg")], 
 	 willvavrik: ["Will Vavrik", require("../assets/MemberPictures/willvavrik.jpg")], 
 	 yatinagarwal: ["Yatin Agarwal", require("../assets/MemberPictures/yatinagarwal.jpg")], 
+	 samuelalber: ["Samuel Alber", require("../assets/MemberPictures/samuelalber.jpeg")],
+	 sydneykarimi: ["Sydney Karimi", require("../assets/MemberPictures/sydneykarimi.jpg")],
+	 abhishekkattuparambil: ["Abhishek Kattuparambil", require("../assets/MemberPictures/abhishekkattuparambil.jpeg")],
+	 kanugrover: ["Kanu Grover", require("../assets/MemberPictures/kanugrover.jpg")],
+	 janvishah: ["Janvi Shah", require("../assets/MemberPictures/janvishah.jpg")],
+	 michellekroll: ["Michelle Kroll", require("../assets/MemberPictures/michellekroll.jpg")],
+	 patrickzhu: ["Patrick Zhu", require("../assets/MemberPictures/patrickzhu.jpg")]
 } 
 export {nameToPic}
