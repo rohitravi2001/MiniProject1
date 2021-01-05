@@ -7,21 +7,20 @@ import { useEffect } from "react";
 import { shuffle } from "../utils/ArrayUtils";
 const names = Object.keys(nameToPic);
 
-/* Here, we have a React functional component. 
-    This function returns the JSX that defines the GameScreen. */
 export default function GameScreen() {
   // TODO: Declare and initialize state variables here, using "useState".
 
-  // The timer is handled for you.
+  // State for the timer is handled for you.
   const [timeLeft, setTimeLeft] = useState(5000);
 
-  // This method is called by the timer every 10 seconds.
+  // Called by the timer every 10 seconds
   const countDown = () => {
     if (timeLeft > 0) {
-      // Time is still left, so decrement time state variable.
+      // Time still left, so decrement time state variable
       setTimeLeft(timeLeft - 10);
     } else {
-      // TODO: Time has expired. Update state here.
+      // Time has expired
+      // TODO: update appropriate state variables
     }
   };
 
@@ -34,7 +33,7 @@ export default function GameScreen() {
     let correctImage = nameToPic[correct][1];
 
     // Generate 3 more wrong answers.
-    var nameOptions = [correctName];
+    let nameOptions = [correctName];
     while (nameOptions.length < 4) {
       let wrong = names[Math.floor(Math.random() * names.length)];
       let wrongName = nameToPic[wrong][0];
@@ -72,14 +71,14 @@ export default function GameScreen() {
     ]
   );
 
-  // Set up four name buttons, with the appropriate names and onPress handlers.
+  // Set up four name button components
   const nameButtons = [];
-  for (var i = 0; i < 4; i++) {
+  for (let i = 0; i < 4; i++) {
     const j = i;
     nameButtons.push(
       // A button is just a Text component wrapped in a TouchableOpacity component.
       <TouchableOpacity
-        key={i}
+        key={j}
         style={styles.button}
         onPress={() => selectedNameChoice(j)}
       >
