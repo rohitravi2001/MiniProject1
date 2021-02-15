@@ -4,8 +4,8 @@
 const fs = require('fs')
 
 let nameToPic = {}
-let names = fs.readFileSync('./assets/names.txt').toString().split('\n')
-let constPath = 'Constants.js'
+let names = fs.readFileSync('../assets/names.txt').toString().split('\n')
+let constPath = '../constants/Constants.js'
 let sourceStr = ''
 
 names.forEach(name => {
@@ -13,11 +13,11 @@ names.forEach(name => {
     nameToPic[simplified.toLowerCase()] = name
 });
 
-let files = fs.readdirSync('./assets/MemberPictures')
+let files = fs.readdirSync('../assets/MemberPictures')
 files.forEach(file => {
     if (file.toLowerCase().endsWith('.jpg')) {
         key = file.substring(0, file.length - 4).toLowerCase()
-        filePath = './assets/MemberPictures/' + file.toString()
+        filePath = '../assets/MemberPictures/' + file.toString()
         sourceStr += `\t ${key}: ["${nameToPic[key]}", require("${filePath}")], \n`
     }
 })
