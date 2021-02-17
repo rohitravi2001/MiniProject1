@@ -22,6 +22,7 @@ const nameToPic = {
 	 dohyuncheon: ["DoHyun Cheon", require("../assets/MemberPictures/dohyuncheon.jpg")], 
 	 dominicdebettencourt: ["Dominic de Bettencourt", require("../assets/MemberPictures/dominicdebettencourt.jpg")], 
 	 eileenliu: ["Eileen Liu", require("../assets/MemberPictures/eileenliu.jpg")], 
+	 ernestgoh: ["Ernest Goh", require("../assets/MemberPictures/ernestgoh.jpg")], 
 	 francischalissery: ["Francis Chalissery", require("../assets/MemberPictures/francischalissery.jpg")], 
 	 geomorales: ["Geo Morales", require("../assets/MemberPictures/geomorales.jpg")], 
 	 harrisonresnick: ["Harrison Resnick", require("../assets/MemberPictures/harrisonresnick.jpg")], 
@@ -70,6 +71,5 @@ const nameToPic = {
 	 willvavrik: ["Will Vavrik", require("../assets/MemberPictures/willvavrik.jpg")], 
 	 yatinagarwal: ["Yatin Agarwal", require("../assets/MemberPictures/yatinagarwal.jpg")], 
 	 yiqian: ["Yi Qian", require("../assets/MemberPictures/yiqian.jpg")], 
-	 yuangoh: ["Yuan Goh", require("../assets/MemberPictures/yuangoh.jpg")], 
 } 
 export {nameToPic}
