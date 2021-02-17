@@ -20,7 +20,7 @@ const nameToPic = {
 	 colinzhou: ["Colin Zhou", require("../assets/MemberPictures/colinzhou.jpg")], 
 	 divyatadimeti: ["Divya Tadimeti", require("../assets/MemberPictures/divyatadimeti.jpg")], 
 	 dohyuncheon: ["DoHyun Cheon", require("../assets/MemberPictures/dohyuncheon.jpg")], 
-	 dominicbettencourt: ["Dominic Bettencourt", require("../assets/MemberPictures/dominicbettencourt.jpg")], 
+	 dominicdebettencourt: ["Dominic de Bettencourt", require("../assets/MemberPictures/dominicdebettencourt.jpg")], 
 	 eileenliu: ["Eileen Liu", require("../assets/MemberPictures/eileenliu.jpg")], 
 	 francischalissery: ["Francis Chalissery", require("../assets/MemberPictures/francischalissery.jpg")], 
 	 geomorales: ["Geo Morales", require("../assets/MemberPictures/geomorales.jpg")], 
