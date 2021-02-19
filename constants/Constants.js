@@ -32,7 +32,7 @@ const nameToPic = {
 	 jacobpashman: ["Jacob Pashman", require("../assets/MemberPictures/jacobpashman.jpg")], 
 	 jamesjung: ["James Jung", require("../assets/MemberPictures/jamesjung.jpg")], 
 	 janvishah: ["Janvi Shah", require("../assets/MemberPictures/janvishah.jpg")], 
-	 jeffreycheng: ["undefined", require("../assets/MemberPictures/jeffreycheng.jpg")], 
+	 jeffreycheng: ["Jeffrey Cheng", require("../assets/MemberPictures/jeffreycheng.jpg")], 
 	 jennessama: ["Jennessa Ma", require("../assets/MemberPictures/jennessama.jpg")], 
 	 joeyhejna: ["Joey Hejna", require("../assets/MemberPictures/joeyhejna.jpg")], 
 	 julietkim: ["Juliet Kim", require("../assets/MemberPictures/julietkim.jpg")], 
